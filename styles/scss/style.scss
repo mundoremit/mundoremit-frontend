@@ -1,0 +1,1080 @@
+$font-color: #192A3E;
+$transition: all 0.5s;
+$font-weight400: 400;
+$font-weight500: 500;
+$font-weight600: 600;
+$Brand-bg-color: #00A8E0;
+$white-color: #FFFFFF;
+$font-family-poppins: "Poppins", sans-serif;
+$font-family-bebasNeue: "Bebas Neue", sans-serif;
+
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: $font-family-poppins;
+  font-weight: $font-weight400;
+  overflow-x: hidden;
+  color: $font-color;
+  background-color: #F7FCFF;
+  line-height: 1.5;
+}
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+.row {
+  margin-right: calc(-0.625 * var(--bs-gutter-x));
+  margin-left: calc(-0.625 * var(--bs-gutter-x));
+}
+
+.row>* {
+  padding-right: calc(var(--bs-gutter-x) * 0.625);
+  padding-left: calc(var(--bs-gutter-x) * 0.625);
+}
+
+// Global class css
+.button-primary {
+  font-size: 16px;
+  background: $Brand-bg-color;
+  border-radius: 30px;
+  color: $white-color;
+  font-weight: $font-weight600;
+  gap: 10px;
+  padding: 12.2px 20px;
+  transition: $transition;
+
+  &:hover {
+    color: $white-color;
+    background-color: $font-color;
+  }
+}
+
+.section_heading {
+  font-family: $font-family-bebasNeue;
+  font-weight: 400;
+  font-size: 42px;
+}
+
+.section-space-tb {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section-space-t {
+  padding-top: 120px;
+
+}
+
+.section-space-b {
+  padding-bottom: 120px;
+}
+
+a:focus,
+button:focus,
+select:focus,
+textarea:focus,
+input:focus {
+  box-shadow: none !important;
+  border-color: $Brand-bg-color !important;
+}
+
+.select-language-flag {
+  position: relative;
+
+  .language-button {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #E5E7EB;
+    background-color: $white-color;
+    border-radius: 60px;
+    gap: 6px;
+    transition: $transition;
+    min-width: 76px;
+    position: relative;
+    padding-right: 26px;
+
+    &::after {
+      background: url("../images/language-select-arrow-white.svg") no-repeat;
+      width: 18px;
+      height: 18px;
+      margin: 0px;
+      border: none;
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      transform: translate(0%, -50%);
+    }
+
+    &:hover {
+      border-color: $Brand-bg-color;
+    }
+  }
+
+  .dropdown-menu {
+    margin-top: 2px;
+    padding: 10px 0px;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 6px;
+
+    .dropdown-item {
+      font-size: 14px;
+      gap: 6px;
+      color: $font-color;
+      padding: 5px 15px;
+      font-weight: 700;
+      transition: $transition;
+
+
+
+      &:hover {
+        background: #00a8e024;
+      }
+    }
+  }
+}
+
+.section-shape-img {
+  z-index: -1;
+}
+
+.font_color_white {
+  color: $white-color;
+}
+
+.button-primary {
+  .button-arrow-icon {
+    transition: $transition;
+  }
+
+  &:hover {
+    .button-arrow-icon {
+      transform: translate(3px, -3px);
+    }
+  }
+}
+
+// globale css end
+
+.form-field {
+  .form-field-row {
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  .form-label {
+    font-size: 14px;
+    margin: 0 0 6px 0;
+    color: #FFFFFF99;
+  }
+
+  .form-input {
+    font-size: 18px;
+    font-weight: 700;
+    height: 48px;
+    padding: 10px 10px 10px 20px;
+    border-radius: 10px;
+    background: #33333399;
+    border: 1px solid #E9E9E9B2;
+    backdrop-filter: blur(70px);
+    color: $white-color;
+
+    &::placeholder {
+      color: $white-color;
+    }
+  }
+}
+
+
+.header {
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  background-color: #F7FCFF;
+  z-index: 999;
+
+  .navbar {
+    gap: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .navigation-link-button {
+    gap: 24px;
+  }
+
+  .navbar-nav {
+    gap: 40px;
+
+    .nav-link {
+      padding: 0px;
+      color: $font-color;
+      font-size: 16px;
+      font-weight: $font-weight500;
+      transition: $transition;
+
+      &:hover {
+        color: $Brand-bg-color;
+
+      }
+    }
+  }
+
+  .select-language-flag {
+    .dropdown-toggle {
+      min-width: 85px;
+
+      &::after {
+        background: url("../images/language-select-arrow-color.svg") no-repeat;
+      }
+    }
+  }
+
+  .header-button-box {
+    gap: 12px;
+  }
+}
+
+// banner section css start
+.home-banner-section {
+  padding-top: 25px;
+
+  .banner-section-main-section {
+    background: url('../images/home-banner-image.png') no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+    min-height: 706px;
+    background-position: center;
+    border-radius: 20px;
+
+    .banner-content {
+      height: 100%;
+      padding: 30px;
+      display: flex;
+      gap: 15px;
+      justify-content: space-between;
+
+      .banner-heading {
+        display: flex;
+        align-items: end;
+      }
+
+      .banner-title {
+        color: $white-color;
+        font-size: 82px;
+        max-width: 420px;
+        font-weight: 400;
+        margin: 0px;
+      }
+    }
+
+    .banner-send-money-form {
+      width: 470px;
+      max-width: 100%;
+      padding: 20px;
+      border-radius: 20px;
+      background: #FFFFFF33;
+      border: 1px solid #FFFFFF66;
+      backdrop-filter: blur(50px);
+
+      .banner-form-title {
+        font-size: 32px;
+        margin: 0 0 16px 0;
+        color: $white-color;
+      }
+
+      .input-with-select-box {
+        position: relative;
+
+        .form-input {
+          padding-right: 105px;
+        }
+
+        .select-country-field {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translate(0%, -50%);
+
+          // z-index: 2;
+
+
+          .select-language-flag {
+            .language-button {
+              background: #FFFFFF33;
+              border: 1px solid $white-color;
+              color: $white-color;
+              font-weight: 500;
+              min-width: 81px;
+            }
+          }
+        }
+
+        .select-country-field.z-3 {
+          z-index: 3;
+        }
+
+        .select-country-field.z-2 {
+          z-index: 2;
+        }
+
+        .select-country-field.z-1 {
+          z-index: 1;
+        }
+      }
+
+      .banner-bank-transfer-total {
+        padding: 20px;
+        background: #33333399;
+        border-radius: 10px;
+        border: 1px solid #E9E9E933;
+        backdrop-filter: blur(70px);
+        margin-bottom: 15px;
+
+        .bank-transfer-table {
+          width: 100%;
+
+          tr {
+            &:first-child {
+              td {
+                padding-top: 0px;
+              }
+            }
+          }
+
+          td {
+            font-size: 14px;
+            color: $white-color;
+            font-weight: 400;
+            padding: 4px 0px;
+            letter-spacing: 0.32px;
+
+            &:last-child {
+              padding-left: 5px;
+              text-align: right;
+            }
+          }
+
+          .table-before-total-row {
+            td {
+              padding-bottom: 15px;
+            }
+          }
+
+          .table-total-amount {
+            td {
+              padding-top: 15px;
+              padding-bottom: 0px;
+              font-size: 16px;
+              font-weight: 600;
+              border-top: 1px solid $white-color;
+            }
+          }
+        }
+      }
+
+      .should-arrive-details {
+        margin-bottom: 16px;
+
+        .should-arrive-title {
+          font-size: 16px;
+          color: #FFFFFF99;
+
+          .should-arrive-value {
+            font-weight: 700;
+            color: $white-color;
+          }
+        }
+      }
+    }
+  }
+
+  .banner-shape-1 {
+    top: 154px;
+    left: 0;
+  }
+
+  .banner-shape-2 {
+    right: 0;
+    bottom: 170px;
+  }
+}
+
+// open free account section css start
+
+.free-account-section {
+  .open-free-account-box-inner {
+    background: radial-gradient(162.31% 1445.9% at 3.33% 5.48%, #00A8E0 0%, #192A3E 100%);
+    border-radius: 20px;
+    padding: 40px;
+    gap: 58px;
+    justify-content: space-between;
+
+    .free-account-title {
+      margin: 0 0 12px 0;
+      color: $white-color;
+
+      .heading_amination {
+        background: $white-color;
+        transform: translateX(0%);
+
+        .heading_amination_dot {
+          background: $white-color;
+        }
+      }
+
+    }
+
+    .free-account-description {
+      margin: 0 0 24px 0;
+    }
+
+    .free-account-btn {
+      background-color: $white-color;
+      color: $Brand-bg-color;
+      transition: $transition;
+
+      &:hover {
+        background: $font-color;
+        color: $white-color;
+
+        svg {
+          transition: $transition;
+
+          path {
+            fill: $white-color;
+          }
+        }
+      }
+    }
+  }
+
+  .free-account-icon-with-content {
+    margin-top: 40px;
+
+    .free-account-icon-with-title {
+      gap: 45px;
+      grid-template-columns: repeat(3, 1fr);
+
+      .free-account-icon-with-content-items {
+        transition: $transition;
+
+        &:hover {
+          .free-account-round-icon {
+            border-color: $Brand-bg-color;
+
+            img {
+              width: 40px;
+              height: 40px;
+            }
+          }
+
+        }
+
+        .free-account-round-icon {
+          height: 100px;
+          width: 100px;
+          border: 3px dashed $font-color;
+          background: $white-color;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          margin: 0px auto;
+          transition: $transition;
+          box-shadow: 0px 2px 3px 0px #0000001A;
+
+          img {
+            transition: $transition;
+          }
+        }
+      }
+
+      .free-account-icon-title {
+        margin: 12px 0 0 0;
+        font-size: 22px;
+        font-weight: $font-weight600;
+        color: $font-color;
+        text-align: center;
+      }
+    }
+  }
+
+  .free-account-shape-1 {
+    left: 0px;
+    bottom: 56px;
+    transform: rotate(15deg);
+  }
+}
+
+.the-power-trust-section {
+  .the-power-trust-box {
+    // Outer wrapper - for border gradient effect
+    background: linear-gradient(180deg, #E5E7EB, #F7FCFF); // border color gradient
+    padding: 1px;
+    border-radius: 20px;
+
+    .the-power-trust-inner-box {
+      background: linear-gradient(180deg, #FFFFFF 0%, #F7FCFF 100%); // main box background
+      border-radius: 20px;
+      padding: 100px 100px 0 100px;
+      min-height: 500px;
+    }
+  }
+
+  .the-power-trust-inner-sub-box {
+    background: linear-gradient(180deg, #00A8E0 0%, #F7FCFF 100%);
+    border-radius: 20px;
+    padding: 0.5px 0.5px 1px 1px;
+  }
+
+  .the-power-trust-inner-sub-box-content {
+    border-radius: 20px;
+    background: #FAFDFF;
+    padding: 50px;
+  }
+
+  .the-power-trust-title {
+    margin: 0 0 22px 0;
+  }
+
+  .the-power-trust-description {
+    color: #192A3E99;
+    margin: 0px;
+  }
+
+  .the-power-trust-card {
+    margin-top: 40px;
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+
+    .the-power-trust-card-items {
+      text-align: center;
+
+      .the-power-trust-card-title {
+        margin: 18px 0px;
+        font-size: 22px;
+        font-weight: $font-weight600;
+      }
+
+      .the-power-trust-card-desc {
+        color: #192A3E99;
+        margin: 0px;
+      }
+    }
+  }
+
+  .the-power-trust-action {
+    margin-top: 10px;
+    text-align: center;
+
+    .button-primary {
+      background: transparent;
+      border-color: $Brand-bg-color;
+      color: $Brand-bg-color;
+      transition: $transition;
+
+      &:hover {
+        color: $white-color;
+        background-color: $font-color;
+        border-color: transparent;
+
+        svg {
+          path {
+            fill: $white-color;
+          }
+        }
+      }
+    }
+  }
+
+  .power-of-trust-shape-1 {
+    bottom: 65px;
+    left: 0;
+  }
+
+  .power-of-trust-shape-2 {
+    right: 0;
+    top: 50%;
+  }
+}
+
+
+// Global Money Transfer Section css start
+
+.global-money-transfers-section {
+  background: $white-color;
+  border-radius: 20px;
+  border: 1px solid #E5E7EB;
+  padding: 80px 95px;
+  margin: 0px 40px;
+
+  .global-money-transfer-title {
+    margin: 0 0 12px 0;
+  }
+
+  .global-money-transfer-description {
+    color: #192A3E99;
+    margin: 0px;
+  }
+
+  .global-money-transfer-country {
+    margin-top: 40px;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+
+    .global-money-transfer-country-items {
+      border: 1px solid #E5E7EB;
+      border-radius: 60px;
+      background: $white-color;
+      padding: 10px 20px 10px 10px;
+      gap: 15px;
+      transition: $transition;
+
+      &:hover {
+        border-color: $Brand-bg-color;
+        background: #F7FCFF;
+
+        svg {
+          transform: rotate(-45deg);
+
+          path {
+            fill: $Brand-bg-color;
+          }
+        }
+      }
+
+      .country-with-name {
+        gap: 6px;
+        font-weight: 700;
+      }
+
+      svg {
+        transition: $transition;
+      }
+    }
+  }
+}
+
+
+// users Says Testimonials css start
+.users-says-testimonials-section {
+
+  .users-testimonial {
+    .section-header {
+      margin-bottom: 40px;
+      gap: 15px;
+
+      .testimonial-title {
+        margin: 0px;
+      }
+
+      .slider-controls {
+        display: flex;
+        gap: 6px;
+
+        button {
+          width: 64px;
+          height: 50px;
+          border: 1px solid $Brand-bg-color;
+          background: $white-color;
+          border-radius: 30px;
+          color: $font-color;
+          font-size: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: $transition;
+
+          svg {
+            transition: $transition;
+          }
+
+          &.active,
+          &:hover {
+            background-color: $Brand-bg-color;
+
+            svg {
+              path {
+                fill: $white-color;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .testimonial-slider {
+      overflow-x: hidden;
+
+      .slick-list {
+        margin: 0 -15px;
+      }
+
+      .testimonial-card {
+        background: $white-color;
+        border-radius: 20px;
+        padding: 25px;
+        margin: 0px 15px;
+        border: 1px solid #E5E7EB;
+        transition: $transition;
+        height: 100%;
+
+        &:hover {
+          border-color: $Brand-bg-color;
+        }
+
+        +.slick-current.slick-active {
+          border-color: $Brand-bg-color;
+        }
+
+        .testimonial-text {
+          font-size: 18px;
+          color: #737373;
+          margin-bottom: 30px;
+        }
+
+        .testimonial-user {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .user-testimonials-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          .user-name {
+            font-size: 16px;
+            font-weight: $font-weight600;
+            margin: 0 0 3px 0;
+          }
+
+          .user-role {
+            font-size: 14px;
+            font-weight: 300;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//  Send Money Anywhere section css start
+.send-money-anywhere-section {
+  .send-money-anywhere-bg {
+    background: url("../images/send-money-anywhere-bg-img.png") no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    border-radius: 20px;
+    padding: 45px 50px;
+  }
+
+  .send-money-anywhere-box-content {
+    max-width: 460px;
+
+    .send-money-anywhere {
+      font-size: 62px;
+      margin: 12px 0 40px;
+    }
+  }
+
+  .send-money-anywhere-action {
+    .button-primary {
+      background: $white-color;
+      color: $Brand-bg-color;
+      border-color: transparent;
+
+      &:hover {
+        border-color: $white-color;
+        background: $font-color;
+        color: $white-color;
+
+        svg {
+          path {
+            fill: $white-color;
+          }
+        }
+      }
+    }
+  }
+
+  .send-money-anywhere-shape-1 {
+    bottom: 0px;
+    left: 0;
+  }
+
+  .send-money-anywhere-shape-2 {
+    right: 0;
+    top: 0;
+  }
+}
+
+// faq and footer section-background section css start
+.faq-and-footer-section-background {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F7FCFF 100%);
+}
+
+// FAQ section css start
+.faq-section {
+  padding-top: 80px;
+  padding-bottom: 40px;
+
+  .faq-title {
+    margin: 0 0 40px 0;
+  }
+
+  .accordion {
+    .accordion-item {
+      border: none;
+      margin-bottom: 12px;
+      border-radius: 20px;
+      box-shadow: none;
+      transition: $transition;
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+
+      .accordion-header {
+        .accordion-collapse.show {
+          border: 1px solid $Brand-bg-color;
+          background: #F7FCFF;
+
+        }
+
+      }
+
+      .accordion-header {
+        .accordion-button {
+          font-weight: 700;
+          font-size: 24px;
+          color: $font-color;
+          background: #F7FCFF;
+          padding: 30px 30px 6px 30px;
+          border-radius: 20px 20px 0 0;
+          box-shadow: none;
+          transition: $transition;
+          border-width: 1px 1px 0px 1px;
+          border-style: solid;
+          border-color: $Brand-bg-color;
+
+          &::after {
+            background-image: url('../images/faq-minus-icon.svg');
+            width: 32px;
+            height: 32px;
+            transform: rotate(0deg);
+            background-size: 100%;
+          }
+
+          &.collapsed::after {
+            background-image: url('../images/faq-plus-icon.svg');
+            width: 32px;
+            height: 32px;
+            transform: rotate(0deg);
+            background-size: 100%;
+          }
+
+          &:focus {
+            box-shadow: none;
+            border-color: transparent;
+          }
+        }
+
+        .accordion-button.collapsed {
+          border-color: transparent;
+          background: $white-color;
+          padding: 20px 30px;
+        }
+      }
+
+      .accordion-body {
+        padding: 0 78px 30px 30px;
+        color: #192A3E99;
+        border-width: 0px 1px 1px 1px;
+        border-style: solid;
+        border-color: $Brand-bg-color;
+        border-radius: 0px 0px 20px 20px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------------------------------------------------------------------------------------------------------------
+
+
+// footer css start
+.footer {
+  padding: 0px 40px 40px 40px;
+
+  .footer-inner {
+    padding: 80px 0 40px;
+    border-radius: 20px;
+    background: radial-gradient(173.6% 193.6% at -63.35% 151.36%, #00A8E0 0%, #192A3E 100%);
+  }
+
+  .footer-perent-box {
+    gap: 85px;
+
+    .footer-col {
+      width: auto;
+      flex: auto;
+      margin: 0px;
+    }
+  }
+
+  .footer-logo {
+    max-width: 370px;
+
+
+    .footer-brand-description {
+      color: $white-color;
+      margin: 15px 0 0 0px;
+    }
+  }
+
+  .footer-link {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+
+    li {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+
+      a {
+        text-decoration: none;
+        color: $white-color;
+        transition: $transition;
+        display: inline-block;
+
+        &:hover {
+          transform: translate(5px, 0px);
+        }
+      }
+    }
+  }
+
+  .footer-separetion-line {
+    border-bottom: 1px solid #FFFFFF33;
+    margin: 24px auto;
+    display: block;
+    width: calc(100% - 60px);
+  }
+
+  .social-media-and-copyright {
+    ul {
+      margin: 0px;
+      padding: 0px;
+      list-style-type: none;
+      gap: 16px;
+
+      .copyright-items {
+        position: relative;
+
+        &:last-child {
+          &::after {
+            display: none;
+          }
+        }
+
+        &::after {
+          content: "";
+          border-right: 1px solid $white-color;
+          height: calc(100% - 4px);
+          width: auto;
+          position: absolute;
+          right: -8px;
+          top: 50%;
+          transform: translate(0%, -50%);
+        }
+
+        .copyright-text,
+        .copyright-link {
+          font-size: 16px;
+          font-weight: $font-weight400;
+          color: $white-color;
+
+        }
+
+        .copyright-link {
+          text-decoration: none;
+          transition: $transition;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .social-media-icon {
+      gap: 12px;
+
+      .social-link {
+        width: 34px;
+        height: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #FFFFFF1A;
+        border-radius: 6px;
+        transition: $transition;
+
+        &:hover {
+          background: $Brand-bg-color;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1200px;
+  }
+}
