@@ -1,6 +1,5 @@
-import TransferForm from "@/components/TransferForm";
-import LimitNotice from "@/components/LimitNotice";
-
+import TransferForm from '../components/TransferForm';
+import LimitNotice from '../components/LimitNotice';
 export default function Page() {
   const daily = Number(process.env.NEXT_PUBLIC_DAILY_LIMIT_CHF || 5000);
   const monthly = Number(process.env.NEXT_PUBLIC_MONTHLY_LIMIT_CHF || 20000);
