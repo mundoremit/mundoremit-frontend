@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
 import { getFxQuoteCHFtoKES, loadStats, saveStats } from "@/lib/api";
-import RateBadge from "@/components/RateBadge";
+import RateBadge from "./RateBadge";
 import { useRouter } from "next/navigation";
 
 const DAILY_LIMIT = Number(process.env.NEXT_PUBLIC_DAILY_LIMIT_CHF || 5000);
